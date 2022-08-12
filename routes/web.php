@@ -17,6 +17,4 @@ use Illuminate\Support\Facades\Route;
 Route::get("/reload", "GoogleController@index")->name('reload');
 Route::get("/coordenadas", "GoogleController@obtenerCoordenadas")->name('coordenadas');
 
-Route::get('/', function () {
-    return view('googleAutocomplete');
-});
+Route::get('/',"GoogleController@index");
